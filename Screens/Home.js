@@ -133,6 +133,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "column",
     marginRight: 45,
+    marginLeft: 10,
   },
   itemHeading: {
     fontWeight: "bold",
@@ -168,7 +169,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   todoIcon: {
-    marginTop: 5,
     fontSize: 20,
     marginLeft: 14,
   },
