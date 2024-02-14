@@ -3,14 +3,14 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBLvtRWCIbX0--wydlvnckxySfmsIzwa8Y",
-  authDomain: "test-af277.firebaseapp.com",
-  databaseURL: "https://test-af277-default-rtdb.firebaseio.com",
-  projectId: "test-af277",
-  storageBucket: "test-af277.appspot.com",
-  messagingSenderId: "641697319957",
-  appId: "1:641697319957:web:0675c3f0a3b24c41de521c",
-  measurementId: "G-7205SZ3BJF",
+  apiKey: process.env.EXPO_PUBLIC_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_AUTH_DOMAIN,
+  databaseURL: process.env.EXPO_PUBLIC_DATABASE_URL,
+  projectId: process.env.EXPO_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_APP_ID,
+  measurementId: process.env.EXPO_PUBLIC_MEASUREMENT_ID,
 };
 
 if (!firebase.apps.length) {
