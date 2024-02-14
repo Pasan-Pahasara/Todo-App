@@ -9,7 +9,7 @@ import {
   Pressable,
 } from "react-native";
 import React, { useState, useEffect } from "react";
-import { firebase } from "../config";
+import { firebase } from "../db/config";
 import { FontAwesome } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 

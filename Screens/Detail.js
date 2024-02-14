@@ -1,6 +1,6 @@
 import { View, Text, TextInput, StyleSheet, Pressable } from "react-native";
 import React, { useState } from "react";
-import { firebase } from "../config";
+import { firebase } from "../db/config";
 import { useNavigation } from "@react-navigation/native";
 
 const Detail = ({ route }) => {
