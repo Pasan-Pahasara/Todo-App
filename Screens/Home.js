@@ -15,8 +15,8 @@ import { useNavigation } from "@react-navigation/native";
 
 const Home = () => {
   const [todos, setTodos] = useState([]);
-  const todoRef = firebase.firestore().collection("todos");
-  const [addData, setAddData] = useState("");
+  const todoRef = firebase.firestore().collection('todos');
+  const [addData, setAddData] = useState('');
   const navigation = useNavigation();
 
   /**
@@ -64,7 +64,7 @@ const Home = () => {
       todoRef
         .add(data)
         .then(() => {
-          setAddData("");
+          setAddData('');
           Keyboard.dismiss();
         })
         .catch((error) => {
@@ -75,7 +75,7 @@ const Home = () => {
 
   return (
     <View style={{ flex: 1 }}>
-      <View style={StyleSheet.formContainer}>
+      <View style={styles.formContainer}>
         <TextInput
           style={styles.input}
           placeholder="Add A New Todo"
@@ -96,7 +96,7 @@ const Home = () => {
           <View>
             <Pressable
               style={styles.container}
-              onPress={() => navigation.navigate("Detail", { item })}
+              onPress={() => navigation.navigate('Detail', { item })}
             >
               <FontAwesome
                 name="trash-o"
@@ -106,7 +106,7 @@ const Home = () => {
               />
               <View style={styles.innerContainer}>
                 <Text style={styles.itemHeading}>
-                  {item.heading[0].toupperCase() + item.heading.slice(1)}
+                  {item.heading[0].toUpperCase() + item.heading.slice(1)}
                 </Text>
               </View>
             </Pressable>
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
   innerContainer: {
     alignItems: "center",
     flexDirection: "column",
-    marginRight: 22,
+    marginRight: 45,
   },
   itemHeading: {
     fontWeight: "bold",
