@@ -75,6 +75,9 @@ const Home = () => {
 
   return (
     <View style={{ flex: 1 }}>
+      <View style={styles.header}>
+        <Text style={styles.headerText}>𝓣𝓸𝓭𝓸 𝓛𝓲𝓼𝓽</Text>
+      </View>
       <View style={styles.formContainer}>
         <TextInput
           style={styles.input}
@@ -145,7 +148,7 @@ const styles = StyleSheet.create({
     height: 80,
     marginLeft: 10,
     marginRight: 10,
-    marginTop: 100,
+    marginTop: 60,
   },
   input: {
     height: 48,
@@ -171,5 +174,15 @@ const styles = StyleSheet.create({
   todoIcon: {
     fontSize: 20,
     marginLeft: 14,
+  },
+  header: {
+    marginTop:50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 20,
+  },
+  headerText: {
+    fontSize: 40,
+    fontWeight: 'bold',
   },
 });
